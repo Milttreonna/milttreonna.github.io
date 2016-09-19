@@ -27,6 +27,170 @@ section,
 summary {
   display: block;
 }
+
+
+/*--- Pink ---*/
+
+.ui.pink.buttons .button,
+.ui.pink.button {
+  background-color: #E03997;
+  color: #FFFFFF;
+  text-shadow: none;
+  background-image: none;
+}
+
+.ui.pink.button {
+  box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
+}
+
+.ui.pink.buttons .button:hover,
+.ui.pink.button:hover {
+  background-color: #e61a8d;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+
+.ui.pink.buttons .button:focus,
+.ui.pink.button:focus {
+  background-color: #e10f85;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+
+.ui.pink.buttons .button:active,
+.ui.pink.button:active {
+  background-color: #c71f7e;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+
+.ui.pink.buttons .active.button,
+.ui.pink.buttons .active.button:active,
+.ui.pink.active.button,
+.ui.pink.button .active.button:active {
+  background-color: #ea158d;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+
+/* Basic */
+
+.ui.basic.pink.buttons .button,
+.ui.basic.pink.button {
+  box-shadow: 0px 0px 0px 1px #E03997 inset !important;
+  color: #E03997 !important;
+}
+
+.ui.basic.pink.buttons .button:hover,
+.ui.basic.pink.button:hover {
+  background: transparent !important;
+  box-shadow: 0px 0px 0px 1px #e61a8d inset !important;
+  color: #e61a8d !important;
+}
+
+.ui.basic.pink.buttons .button:focus,
+.ui.basic.pink.button:focus {
+  background: transparent !important;
+  box-shadow: 0px 0px 0px 1px #e10f85 inset !important;
+  color: #e61a8d !important;
+}
+
+.ui.basic.pink.buttons .active.button,
+.ui.basic.pink.active.button {
+  background: transparent !important;
+  box-shadow: 0px 0px 0px 1px #ea158d inset !important;
+  color: #c71f7e !important;
+}
+
+.ui.basic.pink.buttons .button:active,
+.ui.basic.pink.button:active {
+  box-shadow: 0px 0px 0px 1px #c71f7e inset !important;
+  color: #c71f7e !important;
+}
+
+.ui.buttons:not(.vertical) > .basic.pink.button:not(:first-child) {
+  margin-left: -1px;
+}
+
+/* Inverted */
+
+.ui.inverted.pink.buttons .button,
+.ui.inverted.pink.button {
+  background-color: transparent;
+  box-shadow: 0px 0px 0px 2px #FF8EDF inset !important;
+  color: #FF8EDF;
+}
+
+.ui.inverted.pink.buttons .button:hover,
+.ui.inverted.pink.button:hover,
+.ui.inverted.pink.buttons .button:focus,
+.ui.inverted.pink.button:focus,
+.ui.inverted.pink.buttons .button.active,
+.ui.inverted.pink.button.active,
+.ui.inverted.pink.buttons .button:active,
+.ui.inverted.pink.button:active {
+  box-shadow: none !important;
+  color: #FFFFFF;
+}
+
+.ui.inverted.pink.buttons .button:hover,
+.ui.inverted.pink.button:hover {
+  background-color: #ff74d8;
+}
+
+.ui.inverted.pink.buttons .button:focus,
+.ui.inverted.pink.button:focus {
+  background-color: #ff65d3;
+}
+
+.ui.inverted.pink.buttons .active.button,
+.ui.inverted.pink.active.button {
+  background-color: #ff74d8;
+}
+
+.ui.inverted.pink.buttons .button:active,
+.ui.inverted.pink.button:active {
+  background-color: #ff5bd1;
+}
+
+/* Inverted Basic */
+
+.ui.inverted.pink.basic.buttons .button,
+.ui.inverted.pink.buttons .basic.button,
+.ui.inverted.pink.basic.button {
+  background-color: transparent;
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
+  color: #FFFFFF !important;
+}
+
+.ui.inverted.pink.basic.buttons .button:hover,
+.ui.inverted.pink.buttons .basic.button:hover,
+.ui.inverted.pink.basic.button:hover {
+  box-shadow: 0px 0px 0px 2px #ff74d8 inset !important;
+  color: #FF8EDF !important;
+}
+
+.ui.inverted.pink.basic.buttons .button:focus,
+.ui.inverted.pink.basic.buttons .button:focus,
+.ui.inverted.pink.basic.button:focus {
+  box-shadow: 0px 0px 0px 2px #ff65d3 inset !important;
+  color: #FF8EDF !important;
+}
+
+.ui.inverted.pink.basic.buttons .active.button,
+.ui.inverted.pink.buttons .basic.active.button,
+.ui.inverted.pink.basic.active.button {
+  box-shadow: 0px 0px 0px 2px #ff74d8 inset !important;
+  color: #FF8EDF !important;
+}
+
+.ui.inverted.pink.basic.buttons .button:active,
+.ui.inverted.pink.buttons .basic.button:active,
+.ui.inverted.pink.basic.button:active {
+  box-shadow: 0px 0px 0px 2px #ff5bd1 inset !important;
+  color: #FF8EDF !important;
+}
+
 audio,
 canvas,
 progress,
@@ -108,7 +272,7 @@ samp {
   font-family: monospace, monospace;
   font-size: 1em;
 }
-button,
+
 input,
 optgroup,
 select,
@@ -117,29 +281,7 @@ textarea {
   font: inherit;
   color: inherit;
 }
-button {
-  overflow: visible;
-}
-button,
-select {
-  text-transform: none;
-}
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  cursor: pointer;
-}
-button[disabled],
-html input[disabled] {
-  cursor: default;
-}
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
+b
 input {
   line-height: normal;
 }
@@ -1089,7 +1231,6 @@ body {
   background-color: #fff;
 }
 input,
-button,
 select,
 textarea {
   font-family: inherit;
@@ -1168,9 +1309,7 @@ hr {
   overflow: visible;
   clip: auto;
 }
-[role="button"] {
-  cursor: pointer;
-}
+
 h1,
 h2,
 h3,
@@ -3460,8 +3599,7 @@ fieldset[disabled] .btn-link:focus {
   margin-top: 5px;
 }
 input[type="submit"].btn-block,
-input[type="reset"].btn-block,
-input[type="button"].btn-block {
+input[type="reset"].btn-block{
   width: 100%;
 }
 .fade {
@@ -5262,26 +5400,20 @@ a.thumbnail.active {
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
 }
-a.list-group-item,
-button.list-group-item {
+a.list-group-item{
   color: #555;
 }
-a.list-group-item .list-group-item-heading,
-button.list-group-item .list-group-item-heading {
+a.list-group-item .list-group-item-heading.list-group-item-heading {
   color: #333;
 }
-a.list-group-item:hover,
-button.list-group-item:hover,
-a.list-group-item:focus,
-button.list-group-item:focus {
+a.list-group-item:hover
+
+a.list-group-item:focus {
   color: #555;
   text-decoration: none;
   background-color: #f5f5f5;
 }
-button.list-group-item {
-  width: 100%;
-  text-align: left;
-}
+
 .list-group-item.disabled,
 .list-group-item.disabled:hover,
 .list-group-item.disabled:focus {
@@ -5855,13 +5987,6 @@ button.list-group-item-danger.active:focus {
   cursor: pointer;
   filter: alpha(opacity=50);
   opacity: .5;
-}
-button.close {
-  -webkit-appearance: none;
-  padding: 0;
-  cursor: pointer;
-  background: transparent;
-  border: 0;
 }
 .modal-open {
   overflow: hidden;
