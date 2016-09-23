@@ -96,7 +96,7 @@ audio.play();
       image1.src = "kira.jpg"
       image2.src = "kira1.jpg"
       image3.src = "kira2.jpg"
-      image4.src = "white.png"
+      image4.src = "kira3.jpg"
       catagoryName.innerHTML = "Puzzle 8";
     }
 
