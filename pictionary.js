@@ -150,6 +150,8 @@ audio.play();
       image2.src = "anderson1.png"
       image3.src = "anderson2.png"
       image4.src = "anderson3.jpg"
+      var audio = new Audio('laugh.mp3');
+audio.play();
       catagoryName.innerHTML = "Puzzle 14";
     }
     else if (thepuzzle === puzzlename[14]) {
