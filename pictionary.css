@@ -5,25 +5,354 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-html {
-  font-family: font-family:"Lucida Console", Monaco, monospace;;
-  -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
+
+body { color: #BE45B4;
+  background: white;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  min-width: 320px;
+  background: #FFFFFF;
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  line-height: 1.4285em;
+  font-smoothing: antialiased;
+  height:100%;
+  text-align:center;
+  font-size:18px;
 }
+
+
+
+h1, h2, h3 {color: #814FBD;
+	font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-weight: 100;
+	text-transform: uppercase;
+   margin:5px 0;
+}
+
+h1 {
+	font-size: 2.6em;
+}
+
+h2 {
+	font-size: 1.6em;
+}
+
+p{
+  font-size: 1.6em;
+}
+
+#alphabet {
+  @include clear;
+  margin:15px auto;
+  padding:0;
+  max-width:900px;
+}
+
+#alphabet li {
+  float:left;
+  margin: 0 10px 10px 0;
+  list-style:none;
+  width:35px;
+  height:30px;
+  padding-top:10px;
+  background:$white;
+  color:$base-color;
+  cursor:pointer;
+  @include corners(5px);
+  border: solid 1px $white;
+
+    &:hover{
+      background:$base-color;
+      border: solid 1px $white;
+      color:$white;
+    }
+}
+
+
+.ui.pink.buttons .button,
+.ui.pink.button {
+  background-color: #E03997;
+  color: #FFFFFF;
+  text-shadow: none;
+  background-image: none;
+}
+
+.ui.pink.button {
+  box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
+}
+
+.ui.pink.buttons .button:hover,
+.ui.pink.button:hover {
+  background-color: #e61a8d;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+
+.ui.pink.buttons .button:focus,
+.ui.pink.button:focus {
+  background-color: #e10f85;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+
+.ui.pink.buttons .button:active,
+.ui.pink.button:active {
+  background-color: #c71f7e;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+
+.ui.pink.buttons .active.button,
+.ui.pink.buttons .active.button:active,
+.ui.pink.active.button,
+.ui.pink.button .active.button:active {
+  background-color: #ea158d;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+
+/* Basic */
+
+.ui.basic.pink.buttons .button,
+.ui.basic.pink.button {
+  box-shadow: 0px 0px 0px 1px #E03997 inset !important;
+  color: #E03997 !important;
+}
+
+.ui.basic.pink.buttons .button:hover,
+.ui.basic.pink.button:hover {
+  background: transparent !important;
+  box-shadow: 0px 0px 0px 1px #e61a8d inset !important;
+  color: #e61a8d !important;
+}
+
+.ui.basic.pink.buttons .button:focus,
+.ui.basic.pink.button:focus {
+  background: transparent !important;
+  box-shadow: 0px 0px 0px 1px #e10f85 inset !important;
+  color: #e61a8d !important;
+}
+
+.ui.basic.pink.buttons .active.button,
+.ui.basic.pink.active.button {
+  background: transparent !important;
+  box-shadow: 0px 0px 0px 1px #ea158d inset !important;
+  color: #c71f7e !important;
+}
+
+.ui.basic.pink.buttons .button:active,
+.ui.basic.pink.button:active {
+  box-shadow: 0px 0px 0px 1px #c71f7e inset !important;
+  color: #c71f7e !important;
+}
+
+.ui.buttons:not(.vertical) > .basic.pink.button:not(:first-child) {
+  margin-left: -1px;
+}
+
+/* Inverted */
+
+.ui.inverted.pink.buttons .button,
+.ui.inverted.pink.button {
+  background-color: transparent;
+  box-shadow: 0px 0px 0px 2px #FF8EDF inset !important;
+  color: #FF8EDF;
+}
+
+.ui.inverted.pink.buttons .button:hover,
+.ui.inverted.pink.button:hover,
+.ui.inverted.pink.buttons .button:focus,
+.ui.inverted.pink.button:focus,
+.ui.inverted.pink.buttons .button.active,
+.ui.inverted.pink.button.active,
+.ui.inverted.pink.buttons .button:active,
+.ui.inverted.pink.button:active {
+  box-shadow: none !important;
+  color: #FFFFFF;
+}
+
+.ui.inverted.pink.buttons .button:hover,
+.ui.inverted.pink.button:hover {
+  background-color: #ff74d8;
+}
+
+.ui.inverted.pink.buttons .button:focus,
+.ui.inverted.pink.button:focus {
+  background-color: #ff65d3;
+}
+
+.ui.inverted.pink.buttons .active.button,
+.ui.inverted.pink.active.button {
+  background-color: #ff74d8;
+}
+
+.ui.inverted.pink.buttons .button:active,
+.ui.inverted.pink.button:active {
+  background-color: #ff5bd1;
+}
+
+/* Inverted Basic */
+
+.ui.inverted.pink.basic.buttons .button,
+.ui.inverted.pink.buttons .basic.button,
+.ui.inverted.pink.basic.button {
+  background-color: transparent;
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
+  color: #FFFFFF !important;
+}
+
+.ui.inverted.pink.basic.buttons .button:hover,
+.ui.inverted.pink.buttons .basic.button:hover,
+.ui.inverted.pink.basic.button:hover {
+  box-shadow: 0px 0px 0px 2px #ff74d8 inset !important;
+  color: #FF8EDF !important;
+}
+
+.ui.inverted.pink.basic.buttons .button:focus,
+.ui.inverted.pink.basic.buttons .button:focus,
+.ui.inverted.pink.basic.button:focus {
+  box-shadow: 0px 0px 0px 2px #ff65d3 inset !important;
+  color: #FF8EDF !important;
+}
+
+.ui.inverted.pink.basic.buttons .active.button,
+.ui.inverted.pink.buttons .basic.active.button,
+.ui.inverted.pink.basic.active.button {
+  box-shadow: 0px 0px 0px 2px #ff74d8 inset !important;
+  color: #FF8EDF !important;
+}
+
+.ui.inverted.pink.basic.buttons .button:active,
+.ui.inverted.pink.buttons .basic.button:active,
+.ui.inverted.pink.basic.button:active {
+  box-shadow: 0px 0px 0px 2px #ff5bd1 inset !important;
+  color: #FF8EDF !important;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+}
+
+
+
 
 .a1 {
    display:none;
 }
 
-
-h1 {color: pink}
-.pl1 {color: #ff80bf; font-family:"Lucida Console", Monaco, monospace;}
-.pl2 {color:  #595959; font-family:"Lucida Console", Monaco, monospace;}
-.player1 {color: #660066; border-style: solid; border-color: #660066; background-color: #ff99ff; font-family:"Lucida Console", Monaco, monospace;}
-.player2 {color: #4d0000; border-style: solid; border-color: #4d0000; background-color: #ff8080; font-family:"Lucida Console", Monaco, monospace;}
-
-body { font-family: courier; background-image: url("http://www.1wallpaperhd.com/wp-content/uploads/Colorful/FTP1/2560x1440/Light%20color%20purple%20wallpaper%202560x1440.jpg"); background-size: 1800px 800px;
-    background-repeat: no-repeat; }
 
 article,
 aside,
@@ -1094,13 +1423,7 @@ html {
 
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.42857143;
-  color: #333;
-  background-color: #fff;
-}
+
 input,
 button,
 select,

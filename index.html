@@ -3,28 +3,32 @@
 
 <link href="pictionary.css" rel="stylesheet">
 <script src="pictionary.js"></script>
-<title>Pictionary: People</title>
+<link href="semantic.css" rel="stylesheet">
+<title>Pictionary</title>
 </head>
 
 
 
 <center>
 <div>
-   <h1>Pictionary</h1>
+</u><b><h1>Pictionary</h1></b></u>
     <p>Use the letters below to enter your answer</p>
-
+    <br/>
+    <br/>
 </div>
+
 
 <body>
 
     <u><center><p
        id="catagoryName">  <br/>
+       <br/>
          <br/> </p><center></u>
 
-<img id="puzzimage1" src="..." height="200" width="200">
-<img id="puzzimage2" src="..." height="200" width="200">
-<img id="puzzimage3" src="..." height="200" width="200">
-<img id="puzzimage4" src="..." height="200" width="200">
+<img class= "image" id="puzzimage1" src="..." height="200" width="200">
+<img class= "image" id="puzzimage2" src="..." height="200" width="200">
+<img class= "image" id="puzzimage3" src="..." height="200" width="200">
+<img class= "image" id="puzzimage4" src="..." height="200" width="200">
 
 <p id="mylives"></p>
 
@@ -32,10 +36,18 @@
   <div id="hold">
   </div>
 
+  <br/>
+  <center>
+  <p> Wins:</p>
+  <button id="clicks" class="ui inverted pink button" type="button" onClick="clicker()">0</button>
+
+  </center>
+  <script src="counter.js"></script>
+  <br/>
+
 
     <center><div class="letters" id="buttons">
-      <br/>
-      <br/>
+
       <br/>
     </div></center>
 

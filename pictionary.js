@@ -292,7 +292,7 @@ var showLives = document.getElementById("mylives");
     console.log(word);
     buttons();
     guesses = [ ];
-    lives = 10;
+    lives = 3;
     counter = 0;
     space = 0;
     result();
